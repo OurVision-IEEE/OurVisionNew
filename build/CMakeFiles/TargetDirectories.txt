@@ -1,0 +1,3 @@
+/home/pi/OurVisionNew/build/CMakeFiles/rebuild_cache.dir
+/home/pi/OurVisionNew/build/CMakeFiles/LearningCMake.dir
+/home/pi/OurVisionNew/build/CMakeFiles/edit_cache.dir

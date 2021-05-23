@@ -1,12 +1,12 @@
-cmake_minimum_required(VERSION 3.19)
+cmake_minimum_required(VERSION 3.16)
 project(LearningCMake)
 
 file(GLOB srcs *.cpp *.c)
 file(GLOB hdrs *.hpp *.h)
 
 #set(OpenCV_DIR "/usr/local/Cellar/opencv/4.5.1_3/lib/cmake/opencv4/")
-set(TESSERACT_DIR "/usr/local/Cellar/tesseract/4.1.1/include/")
-set(LEPTONICA_DIR "/usr/local/Cellar/leptonica/1.80.0/include/")
+set(TESSERACT_DIR "/usr/include/")
+set(LEPTONICA_DIR "/usr/include/")
 find_package( OpenCV REQUIRED )
 
 include_directories("${CMAKE_CURRENT_LIST_DIR}")
@@ -21,8 +21,8 @@ message("${OpenCV_LIBS}")
 macro(link_lib name)
     add_executable(LearningCMake ${name}.cpp)
     target_link_libraries(LearningCMake ${OpenCV_LIBS} )
-    target_link_libraries(LearningCMake /usr/local/Cellar/tesseract/4.1.1/lib/libtesseract.dylib)
-    target_link_libraries(LearningCMake /usr/local/Cellar/leptonica/1.80.0/lib/liblept.dylib)
+    target_link_libraries(LearningCMake tesseract)
+    target_link_libraries(LearningCMake lept)
 endmacro()
 
 link_lib(main)
