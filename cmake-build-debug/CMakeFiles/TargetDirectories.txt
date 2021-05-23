@@ -1,0 +1,3 @@
+/Users/tezz/CLionProjects/LearningCMake/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/tezz/CLionProjects/LearningCMake/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/tezz/CLionProjects/LearningCMake/cmake-build-debug/CMakeFiles/LearningCMake.dir
